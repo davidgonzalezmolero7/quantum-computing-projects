@@ -6,18 +6,13 @@ This repository contains my personal and academic projects as a 4th-year Physics
 
 These projects are part of my journey into the practical aspects of Fault-Tolerant Quantum Computing. I use Qiskit to bridge the gap between theoretical quantum mechanics and actual circuit implementation.
 
-### Featured Notebooks
+### Featured Notebook
 
-#### 1. 3-Qubit Repetition Code (`3repetitioncode-corrector.ipynb`)
-Implementation of a basic repetition code designed to protect a single logical qubit against bit-flip errors.
-* **Status**: Undergraduate research project.
-* **Focus**: Understanding redundancy and the role of majority voting in quantum states.
-* **Learning Outcome**: Analyzing how gate fidelity affects the success probability of the correction.
-
-#### 2. Bit-Flip Syndrome Extraction (`bitflip-corrector.ipynb`)
-Exploring the use of stabilizer measurements to detect errors.
-* **Mechanics**: Implementation of ancillary qubits to perform parity checks (syndrome extraction) without destroying the data qubit's superposition.
-* **Implementation**: Designed using CNOT and Toffoli gates to automate the recovery process in a simulated environment.
+#### 1. 3-Qubit Repetition Codes (`3-qubit-repetition-codes.ipynb`)
+Implementation of the fundamental 3-qubit repetition codes to protect a single logical qubit against specific discrete errors.
+* **Bit-Flip Correction**: Direct implementation of state encoding, deterministic error simulation (X gate), and in-place decoding. It utilizes CNOT gates for parity checking and a Toffoli (CCX) gate to perform a majority vote and correct the targeted qubit.
+* **Phase-Flip Correction**: Extension of the bit-flip logic to protect against phase errors (Z gate). It demonstrates the principle of basis change by wrapping the noisy channel and the correction logic in Hadamard gates.
+* **Simulation**: Validated using the `qasm_simulator` from Qiskit Aer to demonstrate recovery under targeted single-qubit errors.
 
 ---
 
@@ -25,7 +20,7 @@ Exploring the use of stabilizer measurements to detect errors.
 
 * **Core Framework**: Qiskit SDK (IBM Quantum).
 * **Languages & Libraries**: Python, NumPy, Matplotlib.
-* **Key Skills**: Quantum Circuit Design, Error Mitigation, Syndrome Extraction.
+* **Key Skills**: Quantum Circuit Design, Error Mitigation, Logic Gates.
 * **Ongoing Specialization**: Supplementing my university studies with the "Hands-on Quantum Error Correction" course by Google Quantum AI.
 
 ---
@@ -36,3 +31,27 @@ Exploring the use of stabilizer measurements to detect errors.
 To run these notebooks locally, you will need Python 3.x and the following libraries:
 ```bash
 pip install qiskit qiskit-aer matplotlib pylatexenc
+```
+## How to Use
+Clone the repository:
+
+Bash
+git clone [https://github.com/tu-usuario/quantum-computing-projects.git](https://github.com/tu-usuario/quantum-computing-projects.git)
+
+
+## Navigate to the directory:
+
+```Bash
+cd quantum-computing-projects
+```
+
+
+Launch the notebooks:
+Open the directory using Jupyter Notebook, JupyterLab, or VS Code to explore, modify, and run the .ipynb files locally.
+
+## About Me
+I am a 4th-year Physics undergraduate at the University of Alicante with a strong interest in the intersection of foundational physics and computer science. My academic focus is currently centered on Fault-Tolerant Quantum Computing (FTQC) and Quantum Error Correction.
+
+I am currently applying for the Master's Degree in Quantum Computing at UAM to transition into advanced quantum software engineering and R&D. To further my specialization, I am also supplementing my university studies with the "Hands-on Quantum Error Correction" course by Google Quantum AI.
+
+Feel free to connect or reach out if you are interested in Quantum Error Correction or algorithm implementation.
