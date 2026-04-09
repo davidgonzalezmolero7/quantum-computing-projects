@@ -29,13 +29,12 @@ Implementation of the fundamental 3-qubit repetition codes to protect a single l
 
 ### Prerequisites
 To run these notebooks locally, you will need Python 3.x and the following libraries:
-```bash
+```Bash
 pip install qiskit qiskit-aer matplotlib pylatexenc
 ```
 ## How to Use
 Clone the repository:
 
-Bash
 git clone [https://github.com/davidgonzalezmolero7/quantum-computing-projects.git](https://github.com/davidgonzalezmolero7/quantum-computing-projects.git)
 
 
