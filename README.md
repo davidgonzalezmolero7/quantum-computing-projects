@@ -1,4 +1,4 @@
- Quantum Computing Projects
+# Quantum Computing Projects
 
 This repository contains my personal and academic projects as a 4th-year Physics student at the University of Alicante. My work currently focuses on learning and implementing Quantum Error Correction (QEC) foundations, which serves as the core of my Undergraduate Thesis (TFG).
 
