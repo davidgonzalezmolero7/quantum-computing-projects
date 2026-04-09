@@ -36,7 +36,7 @@ pip install qiskit qiskit-aer matplotlib pylatexenc
 Clone the repository:
 
 Bash
-git clone [https://github.com/tu-usuario/quantum-computing-projects.git](https://github.com/tu-usuario/quantum-computing-projects.git)
+git clone [https://github.com/davidgonzalezmolero7/quantum-computing-projects.git](https://github.com/davidgonzalezmolero7/quantum-computing-projects.git)
 
 
 ## Navigate to the directory:
